@@ -1,0 +1,175 @@
+body {
+  background: grey;
+  display: flex;
+}
+.bulb1 {
+  background: #7f00ff;
+  display: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50% 10% 10%;
+  box-shadow: inset 1px 1px 15px 2px;
+  margin-left: 300px;
+  margin-top: 20%;
+  overflow: hidden;
+}
+.bulb2 {
+  display: absolute;
+  background: #7f00ff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50% 10% 10%;
+  box-shadow: inset 1px 1px 15px 2px;
+  margin-left: 100%;
+  margin-top: 5%;
+}
+.bulb3 {
+  display: absolute;
+  background: #7f00ff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50% 50% 10% 10%;
+  box-shadow: inset 1px 1px 15px 2px;
+  margin-left: 130%;
+  margin-top: 5%;
+}
+.wire1 {
+  display: absolute;
+  width: 10px;
+  height: 100px;
+  display: absolute;
+  margin-top: -110%;
+  margin-left: 86%;
+  overflow: hidden;
+  background: black;
+  box-shadow: inset 1px 1px 5px 1px purple;
+}
+.wire2 {
+  display: absolute;
+  width: 10px;
+  height: 250px;
+  display: absolute;
+  margin-top: -32%;
+  margin-left: 111%;
+  overflow: hidden;
+  z-index: 1;
+  background: black;
+  box-shadow: inset 1px 1px 5px 1px purple;
+}
+.wire3 {
+  display: absolute;
+  width: 10px;
+  height: 350px;
+  display: absolute;
+  margin-top: -58%;
+  margin-left: 141%;
+  overflow: hidden;
+  z-index: 1;
+  background: black;
+  box-shadow: inset 1px 1px 5px 1px purple;
+}
+.b {
+  height: 40px;
+  width: 50px;
+  background: white;
+  border-radius: 2px 2px 50% 50%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+}
+#b3 {
+  margin-left: 23.7%;
+  margin-top: -10.25%;
+  animation: glow3;
+  animation-duration: 7s;
+  animation-timing-function: ease-out;
+}
+/* Animation Property */
+@keyframes glow3 {
+  0% {
+    background: yellow;
+    opacity: 0.2;
+  }
+  100% {
+    background: yellow;
+    opacity: 0.9;
+  }
+}
+#b1 {
+  margin-left: 31%;
+  margin-top: -1.5%;
+  animation: glow1;
+  animation-duration: 6s;
+  animation-timing-function: ease-out;
+}
+/* Animation Property */
+@keyframes glow1 {
+  0% {
+    background: yellow;
+    opacity: 0.2;
+  }
+  100% {
+    background: yellow;
+    opacity: 0.9;
+  }
+}
+#b2 {
+  margin-left: 39.99%;
+  margin-top: 7.35%;
+  animation: glow2;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+}
+/* Animation Property */
+@keyframes glow2 {
+  0% {
+    background: yellow;
+    opacity: 0.2;
+  }
+  100% {
+    background: yellow;
+    opacity: 0.9;
+  }
+}
+/* Adjusting view for mobile screen */
+@media (max-width: 667px) {
+  .bulb1 {
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+  .bulb2 {
+    margin-top: 70px;
+    margin-left: 160px;
+  }
+  .bulb3 {
+    margin-top: 70px;
+    margin-left: 250px;
+  }
+  #b3 {
+    margin-left: 23.3%;
+    margin-top: -61.1%;
+  }
+  #b1 {
+    margin-left: 46.3%;
+    margin-top: -18.1%;
+  }
+  #b2 {
+    margin-left: 69.5%;
+    margin-top: 25.3%;
+  }
+  .wire1 {
+    height: 86px;
+    margin-top: -150%;
+    margin-left: 33%;
+  }
+  .wire2 {
+    height: 273px;
+    margin-top: -104px;
+    margin-left: 205px;
+  }
+  .wire3 {
+    height: 430px;
+    margin-top: -260px;
+    margin-left: 295px;
+  }
+}
